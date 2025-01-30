@@ -1,8 +1,8 @@
-# NextJS for Beginner
+# CSS e Accessibilità: progettare per l'inclusione culturale
 
-Slides for what?.
+Slides for explore cultural inclusion on Web Accessibility.
 
-Originally conceived for the what?.
+Originally conceived for the [CSS Day - 2025 Edition](https://2025.cssday.it/)
 
 Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
