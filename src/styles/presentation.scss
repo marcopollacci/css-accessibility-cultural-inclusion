@@ -216,7 +216,7 @@ pre {
 
 .cover {
   h1 {
-    @include mixins.gradientText(#000, #fafafa);
+    @include mixins.gradientText(#243da3, #4b6bec);
     font-size: 1.3em;
     text-align: center;
     margin-top: 0;
@@ -464,11 +464,14 @@ a {
 }
 
 .text-cover {
-  @include mixins.gradientText(#000, #a0a0a0);
+  @include mixins.gradientText(#243da3, #4b6bec);
 }
 
 .text-sub-section {
-  color: #484848;
+  background: linear-gradient(90deg, #ff00d8, #ff542f);
+  font-family: 'Graphik Semibold', serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
 .special-file {
