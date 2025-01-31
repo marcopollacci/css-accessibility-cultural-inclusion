@@ -121,11 +121,11 @@ p-deck:not([mode='speaker']) .full-media-no-padding {
     width: calc(50% - 0.5em);
 
     &:nth-child(odd) {
-      margin-right: 0.5em;
+      margin-inline-end: 0.5em;
     }
 
     &:nth-child(even) {
-      margin-left: 0.5em;
+      margin-inline-start: 0.5em;
     }
   }
 }

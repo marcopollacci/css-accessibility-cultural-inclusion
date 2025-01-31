@@ -260,6 +260,16 @@ pre {
   }
 }
 
+.cover-internal {
+  @extend .cover;
+  text-align: center;
+  @for $i from 1 through 6 {
+    h#{$i} {
+      @extend .current-gradient;
+    }
+  }
+}
+
 .cover-subSection {
   @extend .cover;
 
