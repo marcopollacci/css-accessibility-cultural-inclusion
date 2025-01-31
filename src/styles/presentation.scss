@@ -472,6 +472,21 @@ a {
   @include mixins.gradientText(#4a69eb, #fafafa);
 }
 
+.main-cover {
+  img {
+    &[light] {
+      // position: absolute;
+      // inset-block-start: 0;
+      // inset-inline-end: 0;
+      height: 3em;
+    }
+    height: 3em;
+  }
+  h6 {
+    margin-block-end: 2rem;
+  }
+}
+
 .text-sub-section {
   color: #aeaeae;
 }
