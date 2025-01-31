@@ -1,4 +1,5 @@
 p-deck {
+  color: #ffffff;
   &:not([mode]),
   &[mode='presentation'] {
     transition: background-color var(--sliding-duration) var(--sliding-duration);
@@ -6,6 +7,10 @@ p-deck {
   }
 
   &[mode='speaker'] {
+    background-color: #6a6969;
+    ul {
+      background-color: #6a6969;
+    }
     p-fragment {
       opacity: 0.5;
       &[aria-hidden='false'] {

@@ -57,6 +57,7 @@
   --brand-color-ant: #f60;
   --sketchy-arrow-width: 0.1em;
   --sketchy-arrow-tip-size: 20;
+  --current-slide-bg: #000000;
 }
 
 p-deck::after {
@@ -214,9 +215,13 @@ pre {
   }
 }
 
+.current-gradient {
+  @include mixins.gradientText(#4a69eb, #fafafa);
+}
+
 .cover {
   h1 {
-    @include mixins.gradientText(#243da3, #4b6bec);
+    @extend .current-gradient;
     font-size: 1.3em;
     text-align: center;
     margin-top: 0;
@@ -464,14 +469,11 @@ a {
 }
 
 .text-cover {
-  @include mixins.gradientText(#243da3, #4b6bec);
+  @include mixins.gradientText(#4a69eb, #fafafa);
 }
 
 .text-sub-section {
-  background: linear-gradient(90deg, #ff00d8, #ff542f);
-  font-family: 'Graphik Semibold', serif;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  color: #aeaeae;
 }
 
 .special-file {
@@ -483,6 +485,7 @@ a {
 }
 
 p-slide {
+  background-color: var(--current-slide-bg);
   gfy-blob {
     display: none;
     position: absolute;
@@ -500,7 +503,7 @@ p-slide {
   .group-fragment[aria-hidden='false'] {
     display: none;
     &:last-child {
-      display: inherit;
+      display: initial;
     }
   }
 }
@@ -511,6 +514,10 @@ pre[data-label-file] {
   border-radius: 1em;
   border: 1px solid #c7c6c6;
   position: relative;
+  background-color: #f5f4f4;
+  & code {
+    background-color: #f5f4f4;
+  }
 }
 pre[data-label-file]::before {
   content: attr(data-label-file);
@@ -551,6 +558,10 @@ pre[data-label-file]::after {
   li {
     margin-bottom: 0.6em;
   }
+}
+
+.fragment-animation-from-bottom[aria-hidden='false'] {
+  animation: from-bottom 1s;
 }
 
 .grid {
