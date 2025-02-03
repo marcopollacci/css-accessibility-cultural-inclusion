@@ -1,5 +1,5 @@
 .button-danger {
-  background-color: red;
+  background-color: #ff0000;
   text-align: center;
   color: white;
   font-size: 0.5em;
@@ -62,19 +62,25 @@
   p-fragment > span {
     position: absolute;
     inset-block-end: 1em;
-    inset-inline-start: 3.5em;
+    inset-inline-start: 3.7em;
     font-size: 3em;
   }
   .flex {
     div {
       display: flex;
       flex-direction: row;
+      &[dir='rtl'] span {
+        border-color: #ff0000;
+        &[style*='margin-inline-end'] {
+          border-color: #008000;
+        }
+      }
       span {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         font-size: 0.8em;
-        border: 1px solid #ffffff;
+        border: 2px solid #ffffff;
         width: 100%;
       }
     }
