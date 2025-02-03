@@ -1,7 +1,7 @@
 .presentation-nav {
   position: fixed;
-  bottom: 0.5rem;
-  right: 0;
+  inset-block-end: 0.5rem;
+  inset-inline-end: 0;
   display: flex;
 
   button {
@@ -15,8 +15,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: 0.45em;
-      left: 0.45em;
+      inset-block-start: 0.45em;
+      inset-inline-start: 0.45em;
       width: 0.707em;
       height: 0.1em;
       background: currentColor;

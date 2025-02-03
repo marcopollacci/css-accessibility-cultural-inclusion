@@ -40,8 +40,8 @@ em {
   position: absolute;
   z-index: 100;
   max-width: 80vw;
-  top: 0.5vw;
-  left: 0.5vw;
+  inset-block-start: 0.5vw;
+  inset-inline-start: 0.5vw;
 }
 
 .presentation-toolbar,

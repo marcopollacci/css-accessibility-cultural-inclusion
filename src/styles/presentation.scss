@@ -62,9 +62,9 @@
 
 p-deck::after {
   position: fixed;
-  top: 0.5em;
-  left: 0;
-  right: 0.5em;
+  inset-block-start: 0.5em;
+  inset-inline-start: 0;
+  inset-inline-end: 0.5em;
   font-size: 50%;
   text-align: center;
   content: '';
@@ -95,7 +95,7 @@ p-fragment.landing {
 }
 
 .our-header {
-  border-left: var(--brand-color) solid 0.15em;
+  border-inset-inline-start: var(--brand-color) solid 0.15em;
   padding: 0.5em;
   margin: 0 0 0.5em;
 }
@@ -139,13 +139,13 @@ p-fragment.landing {
   blockquote:before {
     content: '“';
     inset-inline-start: -0.1em;
-    top: -0.3em;
+    inset-block-start: -0.3em;
   }
 
   blockquote:after {
     content: '”';
     inset-inline-end: 0;
-    bottom: 0.15em;
+    inset-block-end: 0.15em;
   }
 
   cite {
@@ -188,16 +188,16 @@ pre {
 }
 
 .long-list {
-  --li-margin-bottom: 0.3em;
+  --li-margin-block-end: 0.3em;
   @include mixins.smallText;
 
   li {
-    margin-bottom: var(--li-margin-bottom);
+    margin-block-end: var(--li-margin-block-end);
   }
 }
 
 .more-margin li {
-  margin-bottom: 0.6em;
+  margin-block-end: 0.6em;
 }
 
 .invert {
@@ -211,16 +211,16 @@ pre {
 }
 
 .bottom-fist-page {
-  left: 50%;
+  inset-inline-start: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   position: absolute;
-  bottom: 0;
+  inset-block-end: 0;
   font-size: 0.4em;
   transform: translate(-50%, -50%);
   span:first-of-type {
-    margin-bottom: 0.3em;
+    margin-block-end: 0.3em;
   }
 }
 
@@ -233,7 +233,7 @@ pre {
     @extend .current-gradient;
     font-size: 1.3em;
     text-align: center;
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   a {
@@ -300,25 +300,25 @@ pre {
 .my-list {
   h5,
   h6 {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
   }
 }
 
 .links {
   font-size: 70%;
   align-self: center;
-  margin-top: 0.5em;
+  margin-block-start: 0.5em;
 
   li:not(:first-child) {
-    margin-top: inherit;
+    margin-block-start: inherit;
   }
 
   a {
     display: block;
     width: -moz-fit-content;
     width: fit-content;
-    padding-left: 1.75em;
+    padding-inset-inline-start: 1.75em;
   }
 }
 
@@ -326,7 +326,7 @@ pre {
   text-align: center;
 
   > h5 {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 
@@ -383,7 +383,7 @@ pre {
     filter: saturate(0.8);
     box-sizing: border-box;
     grid-area: 1 / 1;
-    padding-right: 100%;
+    padding-inset-inline-end: 100%;
   }
 
   &::before {
@@ -410,10 +410,10 @@ pre {
 
 @keyframes big-stroke {
   from {
-    padding-right: 100%;
+    padding-inset-inline-end: 100%;
   }
   to {
-    padding-right: 0%;
+    padding-inset-inline-end: 0%;
   }
 }
 
@@ -442,12 +442,12 @@ a {
 .full-media {
   &.full-media-x {
     height: auto;
-    top: auto;
+    inset-block-start: auto;
   }
 
   &.full-media-y {
     width: auto;
-    left: auto;
+    inset-inline-start: auto;
   }
 }
 
@@ -463,7 +463,7 @@ a {
   }
 
   th {
-    border-bottom: 0.1em solid;
+    border-inset-block-end: 0.1em solid;
   }
 
   td,
@@ -483,7 +483,7 @@ a {
   caption {
     font-family: 'Old Newspaper Types', serif;
     font-size: 60%;
-    margin-bottom: 0.5em;
+    margin-block-end: 0.5em;
   }
 }
 
@@ -557,7 +557,7 @@ pre[data-label-file]::before {
   content: attr(data-label-file);
   display: block;
   width: 100%;
-  border-bottom: 1px solid #c7c6c6;
+  border-inset-block-end: 1px solid #c7c6c6;
   padding: 0.5em 1em;
   text-align: center;
   color: #6f6d6d;
@@ -567,7 +567,7 @@ pre[data-label-file]::before {
 pre[data-label-file]::after {
   content: '🔴 🟡 🟢 ';
   position: absolute;
-  top: 0.5em;
+  inset-block-start: 0.5em;
   inset-inline-start: 1em;
   font-size: 0.7em;
 }
@@ -587,10 +587,10 @@ pre[data-label-file]::after {
 }
 
 .mid-dimension {
-  margin-bottom: 0.5em;
+  margin-block-end: 0.5em;
   font-size: 0.7em;
   li {
-    margin-bottom: 0.6em;
+    margin-block-end: 0.6em;
   }
 }
 

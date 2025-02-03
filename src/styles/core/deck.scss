@@ -19,14 +19,14 @@ p-deck {
     }
     p-slide[next] {
       transform: scale(calc(1 - var(--speaker-next-scale)));
-      top: calc(var(--speaker-next-scale) * -50%);
-      left: calc(var(--speaker-next-scale) * 50% - 50%);
+      inset-block-start: calc(var(--speaker-next-scale) * -50%);
+      inset-inline-start: calc(var(--speaker-next-scale) * 50% - 50%);
       opacity: 0.5;
     }
     p-slide[active] {
       transform: scale(var(--speaker-next-scale));
-      top: calc(50% - var(--speaker-next-scale) * 50%);
-      left: calc(var(--speaker-next-scale) * 50% - 50%);
+      inset-block-start: calc(50% - var(--speaker-next-scale) * 50%);
+      inset-inline-start: calc(var(--speaker-next-scale) * 50% - 50%);
       opacity: 1;
     }
   }
