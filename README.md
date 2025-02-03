@@ -1,4 +1,6 @@
-# CSS e Accessibilità: progettare per l'inclusione culturale
+# Progettare per l'inclusione culturale
+
+### CSS ed accessibilità come strumenti chiave
 
 Slides for explore cultural inclusion on Web Accessibility.
 
