@@ -133,3 +133,12 @@
   font-family: 'Graphik Medium';
   src: url(../fonts/GraphikMedium.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../fonts/lobster.woff2) format('woff2');
+  unicode-range: U+0020-007F;
+}

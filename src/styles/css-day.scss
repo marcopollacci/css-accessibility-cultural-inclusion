@@ -88,3 +88,33 @@
     margin-block-start: 1em;
   }
 }
+
+p-fragment.visibility-none {
+  &[aria-hidden='true'] {
+    visibility: hidden;
+  }
+}
+
+pre:has(.visibility-none):has(p-fragment.visibility-none[aria-hidden='false']) {
+  .visibility-toggle {
+    display: none;
+  }
+}
+
+div.toggle-font {
+  min-width: 3em;
+  h5 {
+    margin: 0;
+  }
+  p-fragment {
+    display: none;
+    &[aria-hidden='false'] {
+      display: inherit;
+    }
+  }
+  &:has(p-fragment[aria-hidden='false']) {
+    .no-replace-font {
+      display: none;
+    }
+  }
+}

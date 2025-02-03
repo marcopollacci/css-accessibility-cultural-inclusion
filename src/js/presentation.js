@@ -64,11 +64,10 @@ document.querySelectorAll(`p-slide[autoplay]`).forEach(el => {
   listenSlideAutoplay(el);
 });
 
-document.querySelectorAll(`p-fragment[group-fragment]`).forEach(el => {
+document.querySelectorAll(`p-fragment[group-fragment]:not([no-group]`).forEach(el => {
   listenGroupFragment(el, el.getAttribute('group-fragment'));
 });
 
-
-document.querySelectorAll(`p-slide[follow-fragments] p-fragment`).forEach(el => {
+document.querySelectorAll(`p-slide[follow-fragments] p-fragment:not([no-follow])`).forEach(el => {
   listenSlideFollowFragment(el);
 });

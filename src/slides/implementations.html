@@ -1,12 +1,12 @@
 <p-slide class="cover center">
-  <h1 style="margin-block-end: 0.5em">Consigli implementativi</h1>
+  <h1 style="margin-block-end: 0.5em">Alcuni consigli implementativi</h1>
   ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧
 </p-slide>
 <p-slide class="cover-internal-sub-section">
   <h1 style="--text-align: start; --starting-point-gradient: #ffffff; --ending-point-gradient: #3c3c3c">margin[block|inline]</h1>
 </p-slide>
 <p-slide>
-  <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
+  <h4 style="margin-bottom: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
   <pre class="small-line" data-label-file="margin.css">
  <code style="font-size: .8em" class="language-scss"> 
     .example {
@@ -20,15 +20,15 @@
     .example-better {
       margin-block: 10rem; //equivalent to margin-top and margin-bottom
       margin-inline: 10rem; //equivalent to margin-left and margin-right
-    }</p-fragment>
-  </code>
+    }
+  </code></p-fragment>
 </pre>
 </p-slide>
 <p-slide class="cover-internal-sub-section">
   <h1 style="--text-align: start; --starting-point-gradient: #ffffff; --ending-point-gradient: #3c3c3c">padding[block|inline]</h1>
 </p-slide>
 <p-slide>
-  <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
+  <h4 style="margin-bottom: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
   <pre class="small-line" data-label-file="padding.css">
  <code style="font-size: .8em" class="language-scss"> 
     .example {
@@ -42,15 +42,15 @@
     .example-better {
       padding-block: 10rem; //equivalent to padding-top and padding-bottom
       padding-inline: 10rem; //equivalent to padding-left and padding-right
-    }</p-fragment>
-  </code>
+    }
+  </code></p-fragment>
 </pre>
 </p-slide>
 <p-slide class="cover-internal-sub-section">
   <h1 style="--text-align: start; --starting-point-gradient: #ffffff; --ending-point-gradient: #3c3c3c">inset[block|inline]</h1>
 </p-slide>
 <p-slide>
-  <h4 style="margin-bottom: 0.5em" class="center">Some code 👨‍💻</h4>
+  <h4 style="margin-bottom: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
   <pre class="small-line" data-label-file="inset.css">
  <code style="font-size: .8em" class="language-scss"> 
     .example {
@@ -65,6 +65,63 @@
       position: absolute;
       inset-block: 10rem; //equivalent to top and bottom
       inset-inline: 10rem; //equivalent to left and right
-    }</p-fragment></code>
+    }</code></p-fragment>
 </pre>
 </p-slide>
+<p-slide class="cover-internal-sub-section">
+  <h1 style="--text-align: start; --starting-point-gradient: #ffffff; --ending-point-gradient: #3c3c3c">multilingual fonts</h1>
+  <h5 style="--text-align: start; margin-block-start: 0" class="no-replace-font">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5>
+</p-slide>
+<p-slide class="medium-text" autoplay timing-fragment="1000">
+  <p class="center">Esistono font che garantiscono la compatibilità con diversi unicode</p>
+  <ul style="margin-block-start: 1em">
+    <p-fragment><li>📍 Noto Fonts</li></p-fragment>
+    <p-fragment><li>📍 Arial Unicode MS</li></p-fragment>
+    <p-fragment><li>📍 DejaVu Fonts</li></p-fragment>
+    <p-fragment><li>📍 Roboto</li></p-fragment>
+    <p-fragment><li>📍 Code2000</li></p-fragment>
+  </ul>
+  <p-notes>
+    <ul style="font-size: 0.7em">
+      <li>
+        1. Noto Fonts (Google Noto) Descrizione: Noto è una famiglia di font sviluppata da Google per coprire tutte le lingue del mondo. Il nome "Noto" deriva da "No Tofu",
+        riferendosi all'obiettivo di eliminare i caratteri quadrati (tofu) che appaiono quando un font non supporta un determinato carattere. Esempi: Noto Sans, Noto Serif, Noto
+        Mono.
+      </li>
+      <li>
+        2. Arial Unicode MS Descrizione: Arial Unicode MS è una versione estesa del popolare font Arial, progettata per includere un'ampia gamma di caratteri Unicode. Utilizzo
+        comune: Documenti multilingue, specialmente in ambienti aziendali.
+      </li>
+      <li>
+        3. DejaVu Fonts Descrizione: DejaVu è una famiglia di font open-source che estende il font Bitstream Vera, aggiungendo supporto per un'ampia gamma di caratteri Unicode.
+        Esempi: DejaVu Sans, DejaVu Serif, DejaVu Sans Mono.
+      </li>
+      <li>
+        4. Code2000 Descrizione: Code2000 è un font shareware progettato per supportare il maggior numero possibile di caratteri Unicode. Utilizzo comune: Ricerca linguistica,
+        documentazione tecnica.
+      </li>
+    </ul>
+  </p-notes>
+</p-slide>
+<p-slide class="cover-internal-sub-section">
+  <h4 style="--ending-point-gradient: #3c3c3c">E se non posso usare un font multilingual?</h4>
+</p-slide>
+<p-slide>
+  <h5 style="margin-block-end: 0.5em">⚠️ E&#39; importante garantire sempre un fallback ⚠️</h5>
+  <pre class="small-line" data-label-file="font.css">
+    <code style="font-size: .8em" class="language-scss"> 
+    .example {
+      font-family: 'Lobster'</code><code style="font-size: .8em;" class="visibility-toggle language-scss">;</code><p-fragment class="visibility-none"><code style="font-size: .8em;padding-inline-start: 0;" class="language-scss">, Arial, sans-serif;</code>
+    </p-fragment><code style="font-size: .8em" class="language-scss">}</code>
+  
+  </pre>
+  <p-fragment
+    style="--circle-sketch-height: 2em; position: absolute; inset-inline-start: 8em; z-index: 1; inset-block-start: 5.8em; width: 6em"
+    class="circle-sketch-highlight"></p-fragment>
+
+  <div style="--text-align: start; margin-block-start: 1em" class="toggle-font cover-internal-sub-section">
+    <h5 class="no-replace-font" style="font-family: 'Lobster'">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5>
+    <p-fragment><h5 style="font-family: Arial, sans-serif">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5></p-fragment>
+  </div>
+</p-slide>
+<script defer type="module" src="js/implementations.js"></script>
