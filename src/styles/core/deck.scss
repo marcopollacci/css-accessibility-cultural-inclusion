@@ -13,6 +13,11 @@ p-deck {
     }
     p-fragment {
       opacity: 0.5;
+      &[aria-hidden='true'] {
+        visibility: visible;
+        display: inline;
+      }
+
       &[aria-hidden='false'] {
         opacity: 1;
       }
