@@ -32,13 +32,43 @@
   <div class="grid-example">
     <span>10</span>
     <span>8</span>
-    <span class="red">75</span>
+    <span style="--background-color: #ff0000">75</span>
     <span>11</span>
   </div>
   <div class="example-inclusion">
-    <p-fragment><h3>USA 🇺🇸</h3></p-fragment>
-    <p-fragment><h3>Cina 🇨🇳</h3></p-fragment>
-    <p-fragment><p>Colore associato al pericolo / attenzione</p></p-fragment>
+    <p-fragment><h3 flag="🇺🇸">USA 🇺🇸</h3></p-fragment>
+    <p-fragment><h3 flag="🇨🇳">Cina 🇨🇳</h3></p-fragment>
+    <p-fragment><p>Colore associato al pericolo</p></p-fragment>
     <p-fragment><p>Colore associato alla fortuna / prosperità</p></p-fragment>
   </div>
 </p-slide>
+<p-slide>
+  <div class="grid-example">
+    <span>10</span>
+    <span>8</span>
+    <span style="--background-color: #d3d32c">75</span>
+    <span>11</span>
+  </div>
+  <div class="example-inclusion">
+    <p-fragment><h3 flag="🇺🇸">USA 🇺🇸</h3></p-fragment>
+    <p-fragment><h3 flag="🇪🇬">Egitto 🇪🇬</h3></p-fragment>
+    <p-fragment><p>Colore associato all'attenzione</p></p-fragment>
+    <p-fragment><p>Colore associato alle celebrazioni funebri</p></p-fragment>
+  </div>
+</p-slide>
+<p-slide class="example-inclusion-2">
+  <h3>↔️ LTR --> RTL</h3>
+  <div class="flex two-columns-divided-vertically mid-dimension">
+    <p-fragment
+      ><div><span style="margin-right: 1em">(˶ᵔ ᵕ ᵔ˶)</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div></p-fragment
+    >
+    <p-fragment
+      ><div dir="rtl"><span style="margin-right: 1em">( • ᴖ • ｡)</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div></p-fragment
+    >
+  </div>
+  <p-fragment><p class="center">---> margin-right <---</p></p-fragment>
+  <p-fragment><span>❌</span></p-fragment>
+  <p-fragment><p class="center">👍 margin-inline-end 👍</p></p-fragment>
+  <p-fragment class="trigger"></p-fragment>
+</p-slide>
+<script defer type="module" src="js/intro.js"></script>
