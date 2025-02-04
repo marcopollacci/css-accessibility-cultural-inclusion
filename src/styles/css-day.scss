@@ -95,12 +95,6 @@ p-fragment.visibility-none {
   }
 }
 
-pre:has(.visibility-none):has(p-fragment.visibility-none[aria-hidden='false']) {
-  .visibility-toggle {
-    display: none;
-  }
-}
-
 div.toggle-font {
   min-width: 3em;
   h5 {
