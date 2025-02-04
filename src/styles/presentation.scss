@@ -287,6 +287,11 @@ pre {
   }
 }
 
+.cover-internal-sub-section-all {
+  --ending-point-gradient: #848383;
+  @extend .current-gradient-sub-section;
+}
+
 .cover-subSection {
   @extend .cover;
 
