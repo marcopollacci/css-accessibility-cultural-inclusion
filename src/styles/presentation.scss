@@ -95,7 +95,7 @@ p-fragment.landing {
 }
 
 .our-header {
-  border-inset-inline-start: var(--brand-color) solid 0.15em;
+  border-inline-start: var(--brand-color) solid 0.15em;
   padding: 0.5em;
   margin: 0 0 0.5em;
 }
@@ -425,10 +425,10 @@ pre {
 
 @keyframes big-stroke {
   from {
-    padding-inset-inline-end: 100%;
+    paddinginline-end: 100%;
   }
   to {
-    padding-inset-inline-end: 0%;
+    paddinginline-end: 0%;
   }
 }
 

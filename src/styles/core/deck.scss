@@ -8,9 +8,7 @@ p-deck {
 
   &[mode='speaker'] {
     background-color: #6a6969;
-    ul {
-      background-color: #6a6969;
-    }
+
     p-fragment {
       opacity: 0.5;
       &[aria-hidden='true'] {
