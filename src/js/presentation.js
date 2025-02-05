@@ -22,7 +22,7 @@ export function listenSlideAutoplay(el) {
   const observer = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
       const isVisibile = mutation.target.getAttribute('aria-hidden') === 'false';
-      const defaultTiming = mutation.target.getAttribute('timing') || 2000;
+      const defaultTiming = mutation.target.getAttribute('timing') || 1000;
       const timing = mutation.target.getAttribute('timing-fragment') || 100;
       if (!isVisibile) return;
       const elements = el.querySelectorAll(`p-fragment:not([no-autoplay])`);
