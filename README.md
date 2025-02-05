@@ -8,6 +8,8 @@ Originally conceived for the [CSS Day - 2025 Edition](https://2025.cssday.it/)
 
 Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
+## Url Slide
+
 ## Building
 
 Node.js >= 10.x is required.

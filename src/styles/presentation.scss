@@ -224,10 +224,6 @@ pre {
   }
 }
 
-.current-gradient {
-  @include mixins.gradientText(#4a69eb, #fafafa);
-}
-
 .current-gradient-sub-section {
   --starting-point-gradient: #fafafa;
   --ending-point-gradient: #000000;
@@ -236,7 +232,9 @@ pre {
 
 .cover {
   h1 {
-    @extend .current-gradient;
+    --starting-point-gradient: #4a69eb;
+    --ending-point-gradient: #fafafa;
+    @extend .current-gradient-sub-section;
     font-size: 1.3em;
     text-align: center;
     margin-block-start: 0;
@@ -271,7 +269,9 @@ pre {
   text-align: center;
   @for $i from 1 through 6 {
     h#{$i} {
-      @extend .current-gradient;
+      --starting-point-gradient: #4a69eb;
+      --ending-point-gradient: #fafafa;
+      @extend .current-gradient-sub-section;
     }
   }
 }
@@ -296,7 +296,7 @@ pre {
   @extend .cover;
 
   h1 {
-    @include mixins.gradientText(#fafafa, #000000);
+    @extend .current-gradient-sub-section;
     font-size: 0.9em;
   }
 }

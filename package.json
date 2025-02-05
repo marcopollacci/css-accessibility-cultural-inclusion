@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "clean": "rimraf public",
-    "start": "node serve.js",
+    "start:css-day-2025": "node serve.js css-day-2025",
     "prettier": "prettier --write \"src/**/*.{html,scss,js}\"",
     "gh-pages": "gh-pages -d public"
   },
