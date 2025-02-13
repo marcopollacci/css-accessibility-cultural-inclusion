@@ -6,6 +6,7 @@ const server = bSync.create();
 
 const baseDir = './public';
 const cssDir = `${baseDir}/css`;
+
 const startPath = process.argv[2] || '';
 
 server.init({
@@ -16,7 +17,7 @@ server.init({
 
 server.watch('src/**/*.html', {}, (event, file) => {
   console.log(`src/**/*.html -> ${event}: ${file}`);
-  buildSlides();
+  buildSlides(false);
   server.reload();
 });
 
