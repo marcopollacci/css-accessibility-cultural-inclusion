@@ -1,5 +1,7 @@
 # Progettare per l'inclusione culturale
 
+![wakatime](https://wakatime.com/badge/user/2729ac0c-0ebb-4599-b424-3a6648627bff/project/04950f9d-f2ee-4b2e-84ab-71ab0e4dbfc2.svg)
+
 ### CSS ed accessibilità come strumenti chiave
 
 Slides for explore cultural inclusion on Web Accessibility.
