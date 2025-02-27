@@ -28,8 +28,8 @@
     "browser-sync": "^3.0.3",
     "gh-pages": "^6.3.0",
     "glob": "^11.0.1",
-    "prettier": "^3.5.0",
+    "prettier": "^3.5.2",
     "rimraf": "^6.0.1",
-    "sass": "1.84"
+    "sass": "1.85"
   }
 }
