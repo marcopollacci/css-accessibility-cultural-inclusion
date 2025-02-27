@@ -1,0 +1,22 @@
+<p-slide class="cover-internal center">
+  <h4 style="margin-block-end: 0.5em">CSS variables a seconda della lingua dell'utente</h4>
+  🎨
+</p-slide>
+<p-slide>
+  <h4 style="margin-block-end: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
+  <pre class="small-line" data-label-file="variable.css">
+ <code style="font-size: .8em" class="language-scss"> 
+    :root {
+        --background-color: #FFFFFF; /* Bianco neutro per l'Occidente */
+    }
+
+    [lang="zh"] { /* Cinese */
+        --background-color: #ff5151; /* Tono sul blu per il Cinese, evitando il bianco */
+    }
+
+    [lang="ar"] { /* Arabo */
+        --background-color: #51A14F; /* Verde, colore molto importante nella cultura araba  */
+    }
+  </code>
+</pre>
+</p-slide>

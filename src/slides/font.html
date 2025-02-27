@@ -1,0 +1,62 @@
+<p-slide class="cover-internal">
+  <h1 style="text-align: start">multilingual fonts</h1>
+  <h5 style="text-align: start; margin-block-start: 0" class="no-replace-font">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5>
+</p-slide>
+<p-slide class="medium-text" autoplay timing="500" timing-fragment="700">
+  <p class="cover-internal-sub-section-all center">Esistono font che garantiscono la compatibilità con diversi unicode ( ദ്ദി ˙ᗜ˙ )</p>
+  <div style="margin-block-start: 1em" class="flex two-columns-flex-start">
+    <p-fragment><p>📍 Noto Fonts</p></p-fragment>
+    <p-fragment><p>📍 Arial Unicode MS</p></p-fragment>
+    <p-fragment><p>📍 DejaVu Fonts</p></p-fragment>
+    <p-fragment><p>📍 Roboto</p></p-fragment>
+    <p-fragment><p>📍 Code2000</p></p-fragment>
+  </div>
+  <p-fragment><p style="text-align: end; margin-block-start: 1em; margin-inline-end: 2em">🚀 Ecc...</p></p-fragment>
+  <p-notes>
+    <ul style="font-size: 0.7em">
+      <li>
+        1. Noto Fonts (Google Noto) Descrizione: Noto è una famiglia di font sviluppata da Google per coprire tutte le lingue del mondo. Il nome "Noto" deriva da "No Tofu",
+        riferendosi all'obiettivo di eliminare i caratteri quadrati (tofu) che appaiono quando un font non supporta un determinato carattere. Esempi: Noto Sans, Noto Serif, Noto
+        Mono.
+      </li>
+      <li>
+        2. Arial Unicode MS Descrizione: Arial Unicode MS è una versione estesa del popolare font Arial, progettata per includere un'ampia gamma di caratteri Unicode. Utilizzo
+        comune: Documenti multilingue, specialmente in ambienti aziendali.
+      </li>
+      <li>
+        3. DejaVu Fonts Descrizione: DejaVu è una famiglia di font open-source che estende il font Bitstream Vera, aggiungendo supporto per un'ampia gamma di caratteri Unicode.
+        Esempi: DejaVu Sans, DejaVu Serif, DejaVu Sans Mono.
+      </li>
+      <li>
+        4. Code2000 Descrizione: Code2000 è un font shareware progettato per supportare il maggior numero possibile di caratteri Unicode. Utilizzo comune: Ricerca linguistica,
+        documentazione tecnica.
+      </li>
+    </ul>
+  </p-notes>
+</p-slide>
+<p-slide class="cover-internal center">
+  <h4 style="margin-block-end: 0.5em">E se non posso usare un font multilingual?</h4>
+  🆘
+</p-slide>
+<p-slide>
+  <img src="img/no-read.png" alt="no-read" class="alter-image-size" />
+</p-slide>
+<p-slide>
+  <h5 style="margin-block-end: 0.5em">⚠️ E&#39; importante gestire il font a seconda della lingua ⚠️</h5>
+  <pre class="small-line" data-label-file="font.css">
+    <code style="font-size: .8em" class="language-scss"> 
+    body {
+      font-family: 'Lobster'
+    }</code>
+    <p-fragment><code style="font-size: .8em;padding-inline-start: 0;" class="language-scss">
+    body:lang(ar) {
+      font-family: Arial, sans-serif;
+    }</code>
+    </p-fragment>
+    </pre>
+  <div lang style="--text-align: start; margin-block-start: 1em" class="toggle-font cover-internal-sub-section">
+    <h5 style="--ending-point-gradient: #ff0000" class="no-replace-font" style="font-family: 'Lobster'">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5>
+    <p-fragment><h5 style="--ending-point-gradient: #ff0000; font-family: Arial, sans-serif">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5></p-fragment>
+  </div>
+</p-slide>
+<script defer type="module" src="js/fonts.js"></script>
