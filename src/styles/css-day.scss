@@ -119,6 +119,35 @@ img[alt='lightning talk'] {
   animation: flicker 4s linear reverse infinite;
 }
 
+p-fragment:has(span[typing])[aria-hidden='false'] span[typing] {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  align-items: center;
+  width: 0;
+  animation: typing 3.5s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+
 @keyframes flicker {
   0% {
     opacity: 0.4;
