@@ -27,6 +27,24 @@
   }
 }
 
+.flag-attribute {
+  position: relative;
+  &:after {
+    --color-border-flag: #ffffff;
+    content: attr(flag);
+    position: absolute;
+    inset-inline-end: 0.011rem;
+    z-index: -1;
+    color: transparent;
+    text-shadow:
+      0 0 1px var(--color-border-flag),
+      -1px -1px 1px var(--color-border-flag),
+      -1px 1px 1px var(--color-border-flag),
+      1px 1px 1px var(--color-border-flag),
+      1px -1px 1px var(--color-border-flag);
+  }
+}
+
 .example-inclusion {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,23 +55,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  h3 {
-    position: relative;
-    &:after {
-      $color: #ffffff;
-      content: attr(flag);
-      position: absolute;
-      inset-inline-end: 0.011rem;
-      z-index: -1;
-      color: transparent;
-      text-shadow:
-        0 0 1px $color,
-        -1px -1px 1px $color,
-        -1px 1px 1px $color,
-        1px 1px 1px $color,
-        1px -1px 1px $color;
-    }
   }
 }
 
