@@ -41,12 +41,22 @@
 <p-slide>
   <img src="img/no-read.png" alt="no-read" class="alter-image-size" />
 </p-slide>
+<p-slide autoplay timing="500" timing-fragment="700" class="center">
+  <h4 style="margin-block-end: 1em" class="cover-all">Fortunatamente i browser utilizzano un fallback automatico con font di sistema</h4>
+  <p-fragment><img style="--image-start-size: 5em" src="img/fallout-ok-guys.png" alt="fallout ok guys" class="alter-image-size" /></p-fragment>
+</p-slide>
+<p-slide class="center">
+  <h1 class="cover-all">MA</h1>
+</p-slide>
+<p-slide class="cover">
+  <h1>E' comunque un font diverso!</h1>
+</p-slide>
 <p-slide>
   <h5 style="margin-block-end: 0.5em">⚠️ E&#39; importante gestire il font a seconda della lingua ⚠️</h5>
   <pre class="small-line" data-label-file="font.css">
     <code style="font-size: .8em" class="language-scss"> 
     body {
-      font-family: 'Lobster'
+      font-family: 'Lobster' // only Latin Font
     }</code>
     <p-fragment><code style="font-size: .8em;padding-inline-start: 0;" class="language-scss">
     body:lang(ar) {
@@ -54,22 +64,5 @@
     }</code>
     </p-fragment>
     </pre>
-  <div lang style="--text-align: start; margin-block-start: 1em" class="toggle-font cover-internal-sub-section">
-    <h5 style="--ending-point-gradient: #ff0000" class="no-replace-font" style="font-family: 'Lobster'">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5>
-    <p-fragment><h5 style="--ending-point-gradient: #ff0000; font-family: Arial, sans-serif">مرحبًا! 你好! Hello! Bonjour! नमस्ते!</h5></p-fragment>
-  </div>
-</p-slide>
-<p-slide class="center">
-  <h1 class="cover-all">MA❗</h1>
-</p-slide>
-<p-slide class="center">
-  <h5 style="line-height: 1.5em">Fortunatamente i browser moderni hanno un fallback automatico per i font che non supportano l'unicode corrente</h5>
-  <img style="--image-start-size: 5em" src="img/fallout-ok-guys.png" alt="fallout ok guys" class="alter-image-size" />
-  <p-fragment
-    ><p style="margin-block-start: 1em" class="mid-dimension">
-      (...ma <span style="--starting-point-gradient: #e91414; --ending-point-gradient: #e91414" class="cover-internal-sub-section-all">attenzione!</span> E' comunque un font
-      diverso 😩)
-    </p></p-fragment
-  >
 </p-slide>
 <script defer type="module" src="js/fonts.js"></script>

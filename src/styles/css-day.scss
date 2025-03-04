@@ -96,24 +96,6 @@ p-fragment.visibility-none {
   }
 }
 
-div.toggle-font {
-  min-width: 3em;
-  h5 {
-    margin: 0;
-  }
-  p-fragment {
-    display: none;
-    &[aria-hidden='false'] {
-      display: inherit;
-    }
-  }
-  &:has(p-fragment[aria-hidden='false']) {
-    .no-replace-font {
-      display: none;
-    }
-  }
-}
-
 img[alt='lightning talk'] {
   opacity: 1;
   animation: flicker 4s linear reverse infinite;
