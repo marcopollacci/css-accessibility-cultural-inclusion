@@ -1,12 +1,12 @@
-# Progettare per l'inclusione culturale
+# Designing for Cultural Inclusion
 
 ![wakatime](https://wakatime.com/badge/user/2729ac0c-0ebb-4599-b424-3a6648627bff/project/04950f9d-f2ee-4b2e-84ab-71ab0e4dbfc2.svg)
 
-### CSS ed accessibilità come strumenti chiave
+### CSS and accessibility as key tools
 
 Slides for explore cultural inclusion on Web Accessibility.
 
-Originally conceived for the [CSS Day - 2025 Edition](https://2025.cssday.it/)
+Originally conceived for the [CSS Day - 2025 Italian Edition](https://2025.cssday.it/)
 
 Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 

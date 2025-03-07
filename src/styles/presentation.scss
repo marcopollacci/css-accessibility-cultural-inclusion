@@ -298,6 +298,12 @@ pre {
   @extend .current-gradient-sub-section;
 }
 
+.cover-red-all {
+  --starting-point-gradient: #eb4a4a;
+  --ending-point-gradient: #ffb6b6;
+  @extend .current-gradient-sub-section;
+}
+
 .cover-subSection {
   @extend .cover;
 
