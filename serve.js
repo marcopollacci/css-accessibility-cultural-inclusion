@@ -8,11 +8,13 @@ const baseDir = './public';
 const cssDir = `${baseDir}/css`;
 
 const startPath = process.argv[2] || '';
+const port = process.argv[3] || 3000;
 
 server.init({
   ghostMode: false,
   startPath,
-  server: { baseDir }
+  server: { baseDir },
+  port
 });
 
 server.watch('src/**/*.html', {}, (event, file) => {
