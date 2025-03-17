@@ -12,7 +12,7 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 ## Url Slide
 
-- [29/03/2025 - CSS Day 2025](https://css-accessibility-cultural-inclusion.pages.dev/css-day-2025/)
+- [28/03/2025 - CSS Day 2025](https://css-accessibility-cultural-inclusion.pages.dev/css-day-2025/)
 
 ## Building
 
