@@ -7,15 +7,15 @@
   <pre class="small-line" data-label-file="variable.css">
  <code style="font-size: .8em" class="language-scss"> 
     :root {
-        --background-color: #FFFFFF; /* Neutral white for the West */
+        --background-color: #FFFFFF; /* Neutral white, default color */
     }
 
     [lang="zh"] { /* Cinese */
         --background-color: #ff5151; /* Blue tone for Chinese, avoiding white */
     }
 
-    [lang="ar"] { /* Arabo */
-        --background-color: #51A14F; /* "Green, a very important color in Arab culture  */
+    body {
+        background-color: var(--background-color);
     }
   </code>
 </pre>
