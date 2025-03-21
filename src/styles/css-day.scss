@@ -174,3 +174,7 @@ p-fragment:has(span[typing])[aria-hidden='false'] span[typing] {
     opacity: 1;
   }
 }
+
+a:visited {
+  color: #fff;
+}
