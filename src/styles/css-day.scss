@@ -111,6 +111,11 @@ p-fragment:has(span[typing])[aria-hidden='false'] span[typing] {
   animation: typing 3.5s steps(40, end) forwards;
 }
 
+a,
+a:visited {
+  color: #ffffff;
+}
+
 @keyframes typing {
   from {
     width: 0;
