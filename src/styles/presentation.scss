@@ -547,7 +547,7 @@ a {
 
 p-slide {
   background-color: var(--current-slide-bg);
-  gfy-blob {
+  &[blob-slide] gfy-blob {
     display: none;
     position: absolute;
     filter: brightness(1.5);
@@ -556,7 +556,7 @@ p-slide {
     height: 8em;
     animation: box 7s ease infinite alternate;
   }
-  &[aria-hidden='false'] {
+  &[blob-slide][aria-hidden='false'] {
     gfy-blob {
       display: block;
     }
