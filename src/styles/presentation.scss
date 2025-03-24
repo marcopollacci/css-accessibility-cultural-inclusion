@@ -554,7 +554,9 @@ p-slide {
     opacity: 0.9;
     width: 8em;
     height: 8em;
-    animation: box 7s ease infinite alternate;
+    animation:
+      box-block 6s ease infinite alternate,
+      box-inline 6s ease infinite alternate-reverse;
   }
   &[blob-slide][aria-hidden='false'] {
     gfy-blob {
@@ -645,25 +647,37 @@ pre[data-label-file]::after {
   }
 }
 
-@keyframes box {
+@keyframes box-block {
   0% {
-    inset-inline-start: var(--rando0);
     inset-block-start: var(--rando1);
   }
   25% {
-    inset-inline-start: var(--rando2);
     inset-block-start: var(--rando3);
   }
   50% {
-    inset-inline-start: var(--rando4);
     inset-block-start: var(--rando5);
   }
   75% {
-    inset-inline-start: var(--rando6);
     inset-block-start: var(--rando7);
   }
   100% {
-    inset-inline-start: var(--rando8);
     inset-block-start: var(--rando9);
+  }
+}
+@keyframes box-inline {
+  0% {
+    inset-inline-start: var(--rando0);
+  }
+  25% {
+    inset-inline-start: var(--rando2);
+  }
+  50% {
+    inset-inline-start: var(--rando4);
+  }
+  75% {
+    inset-inline-start: var(--rando6);
+  }
+  100% {
+    inset-inline-start: var(--rando8);
   }
 }
