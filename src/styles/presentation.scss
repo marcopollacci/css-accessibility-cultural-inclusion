@@ -647,6 +647,18 @@ pre[data-label-file]::after {
   }
 }
 
+.coming-soon {
+  display: none;
+}
+
+body[coming-soon] .coming-soon {
+  display: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes box-block {
   0% {
     inset-block-start: var(--rando1);
